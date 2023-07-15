@@ -1,9 +1,14 @@
 @charset "utf-8";
 
-* {
-    font-size: 20px;
+.section_inner {
+    padding: 50px 10% 30px;
 }
 
-h1, p {
-    color: red;
+.key {
+    padding: 30px 10% 50px;
+    height: 500px;
+    background: center / cover no-repeat url("../Images/sample_key.jpg");
+    
 }
+
+
