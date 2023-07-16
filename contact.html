@@ -1,52 +1,91 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DIC Cafe</title>
     <a href="index.html">Home</a>
+    <link href="CSS/normalize.css" rel="stylesheet">
+    <link href="CSS/main.css" rel="stylesheet">
+    <link href="CSS/contact.css" rel="stylesheet" <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;700&display=swap" rel="stylesheet">
 </head>
+
 <body>
-    <header id="#top">
-        <a href="index.html">
-            <img src="Images/sample_logo_k.png" alt="sample_logo_k" >
-        </a>
-        <nav>
-            <ul>
-                <a href="index.html"><li>Home</li></a>
-                <a href="menu.html" target="_blank"><li>Menu</li></a>
-                <a href="contact.html"><li>Contact</li></a>
+    <header class="sub_header">
+        <nav class="header_nav">
+            <a href="index.html" class="logo">
+                <img src="Images/sample_logo_k.png" alt="sample_logo_k">
+            </a>
+            <ul class="global_nav">
+                <a href="index.html" class="global_nav_item">
+                    <li>Home</li>
+                </a>
+                <a href="menu.html" target="_blank" class="global_nav_item">
+                    <li>Menu</li>
+                </a>
+                <a href="contact.html" class="global_nav_item">
+                    <li>Contact</li>
+                </a>
             </ul>
         </nav>
     </header>
-    <section>
-        <h1>CONTACTO</h1>
-        <p>Contactanos</p>
-        <table border="1">
-            <tr>
-                <td>Su nombre</td>
-                <td>Espacio en blanco</td>
-            </tr>
-            <tr>
-                <td>Contactanos</td>
-                <td>Espacio en blanco</td>
-            </tr>
-            <tr>
-                <td>Area de residencia</td>
-                <td>Espacio en blanco</td>
-            </tr>
-            <tr>
-                <td>Contenido</td>
-                <td>Espacio en blanco</td>
-            </tr>
-        </table>
+    <section class="section_inner">
+        <div class="section_title">
+            <h1>CONTACTO</h1>
+            <p>Contactanos</p>
+        </div>
+        <form action="#" method="post">
+            <table class="contact">
+                <tr class="contact_line">
+                    <td class="contact_sign"><label for="name">Nombre</label></td>
+                    <td class="contact_input"><input type="" required name="name" id="name"></td>
+                </tr>
+                <tr class="contact_line">
+                    <td class="contact_sign"><label for="phonenumber">Datos de contacto</label></td>
+                    <td class="contact_input"><input type="" required name="phonenumber" id="phonenumber"></td>
+                </tr>
+                <tr class="contact_line">
+                    <td class="contact_sign"><label for="region">Region de residencia</label></td>
+                    <td>
+                        <select id="region">
+                            <option value="0">Por favor, seleccione</option>
+                            <option value="1">Hokkaido</option>
+                            <option value="2">Tohoku (las seis prefecturas más septentrionales de Honshu)</option>
+                            <option value="3">Kantou ((mitad oriental de Japón, incluido Tokio))</option>
+                            <option value="4">Centro</option>
+                            <option value="5">Kinki(región alrededor de Osaka, Kioto y Nara)</option>
+                            <option value="6">Chugoku y Shikoku</option>
+                            <option value="7">Kyushu (la más meridional de las cuatro islas principales de Japón)
+                            </option>
+                        </select>
+                    </td>
+                </tr>
+                <tr class="contact_content">
+                    <td class="contact_sign"><label for="content">Contenido</label></td>
+                    <td class="contact_input"><textarea name="content" id="content"></textarea></td>
+                </tr>
+            </table>
+            <div class="contact_btn_area">
+                <button type="reset" class=" contact_btn restore_button">Reiniciar</button>
+                <button type="submit" class=" contact_btn sumit_button">Enviar</button>
+            </div>
+        </form>
     </section>
     <footer>
         <nav>
             <ul>
-                <a href="index.html"><li>Home</li></a>
-                <a href="#"><li>Menu</li></a>
-                <a href="contact.html"><li>Contact</li></a>
+                <a href="index.html">
+                    <li>Home</li>
+                </a>
+                <a href="#">
+                    <li>Menu</li>
+                </a>
+                <a href="contact.html">
+                    <li>Contact</li>
+                </a>
             </ul>
             <a href="index.html">
                 <img src="Images/sample_logo_w.png">
@@ -54,5 +93,7 @@
             <span>© DIVIC Corp. Todos los DERECHOS RESERVADOS</span>
         </nav>
     </footer>
+    <a href="#top">Volver arriba</a>
 </body>
+
 </html>

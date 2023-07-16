@@ -1,5 +1,28 @@
 @charset "utf-8";
 
+html {
+    height: 100%;
+}
+
+body {
+    position: relative;
+    padding-bottom: 75px;
+    min-height: 100%;
+}
+
+li {
+    list-style: none;
+}
+
+div, li {
+    box-sizing: border-box;
+}
+
+p,ul {
+    margin: 0;
+    padding: 0;
+}
+
 .section_inner {
     padding: 50px 10% 30px;
     font-family: 'noto serif', serif;
