@@ -54,6 +54,7 @@ p, ul {
     display: inline-block;
     font-family: 'noto serif', serif;
     font-size: 1.5rem;
+    text-align: center;
     border-bottom: solid #42210b 1px;
     color: #42210b;
     margin-bottom: 20px;
@@ -122,7 +123,7 @@ p, ul {
     align-items: center;
 }
 
- .logo img {
+.logo img {
     width: 100%;
  }
 
@@ -130,9 +131,47 @@ p, ul {
     text-align: left;
 }
 
-.menu_background_image {
-    width: 100%;
-    position: fixed;
-    background: linear-gradient(90deg, #fff 20%, rgba(0,0,0,.6) 60%);
-    background: center / cover no-repeat url("../Images/sample_menu_bg.jpg");
+.menu_recomended_inner {
+    display: flex;
+    justify-content: space-between;
+    
 }
+.menu_recomended_content {
+    flex-wrap: wrap;
+    display: flex;  
+    padding-bottom: 50px;
+}
+.menu_recomended_item {
+    display: flex;
+    justify-content: space-between;
+    text-align: left;
+    width: 50%;
+    flex-direction: row-reverse;
+    margin-bottom: 20px;
+    box-shadow: 2px 2px 5px rgba(0,0,0.4);
+    background-color: #fff;
+}
+.menu_recomended_img {
+    height: 300px;
+    width: 55%;
+    object-fit: cover;
+}
+.background_menu_img {
+    background: url(../Images/sample_menu_bg.jpg) bottom no-repeat;
+    background-attachment: fixed;
+    background-size: 100%;
+}
+
+.menu_cafe_content {
+    display: flex;
+    justify-content: space-between;
+    background-color: #fff;
+    padding: 20px
+}
+.menu_cafe_item {
+    padding: 10px;
+    display: flex;
+    width: 49%;
+    justify-content: space-between;
+}
+
